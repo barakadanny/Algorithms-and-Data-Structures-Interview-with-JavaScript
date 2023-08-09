@@ -42,8 +42,27 @@ console.log(factorial(5)); // 120
 
 // >>>>>>>>> Big O Notation = O(n)
 
-// !3- Prime number
-// !4- Power of a two
-// !5- Recursion
-// !6- Fibonacci sequence with recursion
-// !7- Factorial of a number with recursion
+// !3- Prime number **************
+// Problem: Give a natural number 'n', determine if the number is prime or not
+// A prime number is a natural number greater than 1 that is not a product of two smaller natural numbers.
+// Eg isPRime(5) = true (1*5 or 5*1)
+// isPrime(4) = false (1*4, 2*2 or 4*1)
+
+function isPrime(n) {
+  if (n < 2) return false;
+  for (let i = 2; i <= Math.sqrt(n); i++) {
+    if (n % i == 0) return false;
+  }
+  return true;
+}
+
+console.log(isPrime(0)); // false
+console.log(isPrime(5)); // true
+console.log(isPrime(4)); // false
+
+// >>>>>>>>> Big O Notation = O(sqrt(n))
+
+// !4- Power of a two **************
+// !5- Recursion **************
+// !6- Fibonacci sequence with recursion **************
+// !7- Factorial of a number with recursion **************
